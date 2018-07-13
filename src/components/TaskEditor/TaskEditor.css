@@ -1,0 +1,23 @@
+.modal.show .modal-dialog {
+  top: 30px;
+}
+
+.modal-editor .modal-footer {
+  display: block;
+}
+
+.modal-editor .edit-btns {
+  float: left;
+  width: 80%;
+}
+
+.modal-editor .btn-delete {
+  float: left;
+}
+.modal-editor .btn-edit {
+  float: right;
+}
+.modal-editor .btn-cancel {
+  float: right;
+}
+

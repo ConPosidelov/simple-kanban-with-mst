@@ -1,0 +1,109 @@
+.App {
+  position: relative;
+  background-color: #F8F8FF;
+  text-align: center;
+}
+.App .row .col {
+  padding: 0;
+} 
+.App-nav {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #363636;
+  text-align: center;
+  color: #FFF8DC;
+  line-height: 50px;
+  font-size: 22px;
+
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.App-nav_title {
+  margin: auto;
+}
+
+.App-nav_controls {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1200;
+}
+
+.nav_controls {
+  margin-top: 10px;
+  margin-left: -10px;
+ 
+}
+.nav_controls-btn{
+  margin-left: 10px;
+  margin-bottom: 7px;
+} 
+.nav_controls-btn.dev-tools{
+  margin-left: 80px;
+}
+.App-table {
+  margin-top: 20px;
+}
+
+
+.App-table>.row {
+  border-left: 1px solid #708090;
+  border-top: 1px solid #708090;
+  border-bottom: 1px solid #708090;
+}
+.App-table>.row>.col {
+  //padding: 0;
+}
+
+.Column {
+  width: 100%;
+  min-height: 500px;
+  border-right: 1px solid #708090;
+}
+
+.Column-title {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 1px solid #708090;
+}
+.Column-title_add-task {
+  position: absolute;
+  right: 5px;
+  top: -6px;
+  font-size: 50px;
+  font-weight: 600;
+  color: #32CD32;
+  cursor: pointer;
+}
+.Column-title_add-task:hover {
+  color: #00FF7F;
+}
+.Column-body {
+  padding-left: 3%;
+
+}
+
+.Task {
+  width: 97%;
+  //height: 40px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.rnd-dev_tools {
+  position: absolute;
+  z-index: 100;
+  border: 1px solid #2E8B57;
+  border-top:  20px solid #2E8B57;
+}

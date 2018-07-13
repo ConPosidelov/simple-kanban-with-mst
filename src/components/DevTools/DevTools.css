@@ -1,0 +1,25 @@
+.devtools {
+    width: 100%;
+    height: 100%;
+    background: #FFFAFA;
+    color: black;
+    overflow: scroll;
+}
+
+.react-tabs__tab-panel {
+    //height: 100%;
+    //overflow: scroll;
+}
+
+.devtools .react-tabs {
+    padding: 20px;
+    height: 25px;
+}
+
+.history-entry {
+    padding: 4px;
+    border-bottom: 1px solid #ccc;
+    font-family: 'courier new';
+    font-size: 12px;
+    cursor: pointer;
+}
