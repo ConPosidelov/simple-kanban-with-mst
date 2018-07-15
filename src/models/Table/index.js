@@ -26,6 +26,10 @@ const Table = types
     },
     toggleDevTools() {
       self.isDevToolsVisible = !self.isDevToolsVisible
+    },
+    dragNdropTask (task, index, clone) {
+      destroy(task);
+      self.addTaskFromRoot(index, clone);
     }
   }));
 

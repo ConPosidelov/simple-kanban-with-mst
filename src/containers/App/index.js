@@ -6,7 +6,10 @@ import {
   Container, 
   Row, 
   Col, 
-  Button
+  Button,
+  FormGroup,
+  Label,
+  Input
 } from 'reactstrap';
 
 import { getModel } from '../../models/common/customStore';
@@ -34,15 +37,13 @@ class App extends Component {
    
   onDragEnd = (result) => {
     const { source, destination } = result;
-    const { addTaskFromRoot, deleteTask } = this.props.tableStore;
+    const {dragNdropTask} = this.props.tableStore;
     if(!destination) return;
     if (source.droppableId !== destination.droppableId) {
       const columnsIndex = +destination.droppableId;
       const taskId = source.index;
       const task = getModel(taskId);
-      const taskClone = {...task};
-      deleteTask(task);
-      addTaskFromRoot(columnsIndex, taskClone);
+      dragNdropTask(task, columnsIndex, {...task});
     }   
   };
 
@@ -136,7 +137,6 @@ class App extends Component {
             >
               Undo
             </Button>
-
             <Button
               className="nav_controls-btn"
               size="sm" 
@@ -145,7 +145,6 @@ class App extends Component {
             >
               Redo
             </Button>
-
             <Button
               className="nav_controls-btn dev-tools"
               size="sm" 
